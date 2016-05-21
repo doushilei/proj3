@@ -35,6 +35,10 @@ class ViewController: UIViewController {
         user_name_get = user_name.text!
         password_get = password.text!
         
+        var password_confirm : String = "http://192.168.30.188:8000/controller/?mode=login&phoneNumber="
+        
+        password_confirm = password_confirm + user_name_get + "&password=" + password_get
+                
     }
   
 
