@@ -20,6 +20,22 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
+    @IBOutlet var user_name: UITextField!
+    
+    @IBOutlet var password: UITextField!
+    
+    @IBOutlet var Button_Login: UIButton!
+    
+    var user_name_get : String = ""
+    
+    var password_get : String = ""
+    
+    @IBAction func Login_Clicked(sender: AnyObject) {
+        
+        user_name_get = user_name.text!
+        password_get = password.text!
+        
+    }
   
 
 }
